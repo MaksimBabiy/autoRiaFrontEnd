@@ -1,0 +1,69 @@
+.form {
+    padding: 10px;
+    background-color: #db5c4c;
+    max-width: 550px;
+    border-radius: 0 0 0 10px;
+    &__body {
+        display: flex;
+        justify-content: space-between;
+       &-left {
+           display: flex;
+           flex-direction: column;
+           button {
+               background: transparent;
+               border: 1px solid lightblue;
+               color: white;
+               border-radius: 5px;
+               padding: 5px 10px;
+           }
+       }
+       &-right {
+        display: flex;
+        flex-direction: column;
+        .btn__block{
+            display: flex;
+            justify-content: flex-end;
+        }
+        button {
+            background-color: #219be7;
+            width: 200px;
+            border: 1px solid lightblue;
+            color: white;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+        .label {
+            margin-right: 5px;
+            min-width: 33px;
+            color: white;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center
+        }
+    }
+    }
+}
+
+.ant-select-selector {
+    margin: 10px 0;
+}
+.form__header {
+  
+    .ant-radio-group {
+        label {
+            border-color: white;
+            background:transparent;
+            color: white;
+        }
+        .ant-radio-button-wrapper-checked{
+            background: white !important;
+            border-color: white;
+            span {
+                color: black
+            }
+        }
+    }
+}
+

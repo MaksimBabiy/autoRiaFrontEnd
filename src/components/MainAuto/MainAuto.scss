@@ -1,0 +1,93 @@
+.main__list {
+    &-h1 {
+        font-size: 24px;
+        line-height: 25px;
+        display: inline-block;
+        font-weight: 800;
+        margin: 0;
+    }
+    &-body {
+        display: flex;
+        &-left {
+            flex: 0.25;
+            flex-direction: column;
+            &-item {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                .ant-checkbox-group {
+                    display: flex;
+                    flex-direction: column;
+                }
+                label {
+                    margin: 0 !important;
+                }
+            }
+        }
+        &-right {
+            flex: 0.75;
+            &-item {
+                border-bottom: 1px solid #e0e3e4;
+                padding: 20px;
+                display: flex;
+                &__img {
+                    flex: 0.4;
+                    img {
+                        width: 300px;
+                        height: 197px;
+                    }
+                }
+                &__content {
+                    flex: 0.6;
+                    padding-left: 10px;
+                    
+                    &-data {
+                        &-desc {
+                            p {
+                            height: auto;
+                            max-height: 45px;
+                            max-width: 460px;
+                            margin-bottom: 5px;
+                            overflow: hidden;
+                            }
+                        }
+                        &-list {
+                        margin-top: 1px;
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        &-item {
+                            margin-top: 4px;
+                            width: 50%;
+                            svg {
+                                margin-right: 5px;
+                            }
+                        }
+                        }
+                        
+                      
+                    }
+                    &-title {
+                        height: auto;
+                        max-height: 42px;
+                        font-size: 18px;
+                        line-height: 1.2;
+                        font-weight: 400;
+                    }
+                    &-price {
+                        &-dollors{
+                            font-size: 22px;
+                            font-weight: 700;
+                            color: #3c9806;
+                        }
+                        &-dot {
+                            display: inline-block;
+                            padding: 0 5px;
+                            color: #9b9b9b;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

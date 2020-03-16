@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header,MainPage, AddAuto,MainAuto } from 'components'
+import { Route } from 'react-router';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <div className="container">
+      <Route exact path="/" component={MainPage}/>
+      <Route exact path="/carParams" component={MainAuto} />
+      <Route exact path="/add_auto" component={AddAuto}/>
+      </div>
+    </>
   );
 }
 

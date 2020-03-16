@@ -1,0 +1,82 @@
+.add {
+textarea{
+    resize: none;
+}
+.VIN {
+    &__body {
+        background: rgba(240,242,250,.5);
+        padding: 20px;
+        &-title {
+            font-weight: 700;
+            font-size: 16px;
+        }
+        &-p {
+            margin: 15px 0;
+            font-size: 13px;
+        }
+    }
+}
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0 0 20px;
+    }
+    .add__content {
+        &-body {
+            margin-top: 10px;
+        }
+        &-desc {
+            display: flex;
+            flex-direction: column;
+        }
+        &-title {
+                font-weight: 600;
+                font-size: 15px;
+                color: #256799;
+                margin-bottom: 0;
+        }
+        &-info{
+            span {
+                margin-right: 10px;
+            }
+            &-item {
+                &-header {
+                    display: inline-block;
+                    min-width: 100px;
+                }
+            }
+        }
+        position: relative;
+        padding: 20px;
+        border-bottom: 1px solid #e0e3e4;
+        &::after {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            content: attr(data);
+            background: #cdcdce;
+            width: 20px;
+            color: #525252;
+            height: 20px;
+            top: 21px;
+            border-radius: 10px;
+            left: -6px;
+        }
+        
+        .anticon-caret-down{
+            position: absolute;
+            top: 12px;
+            right: 0;
+            transform: rotate(180deg);
+            font-size: 45px;
+            transition: .5s;
+            &:hover {
+                color: lighten($color: black, $amount: 0.5)
+            }
+        }
+    }
+}
+.active {
+    transform: rotate(0deg) !important;
+}

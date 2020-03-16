@@ -1,0 +1,7 @@
+export { default as Header } from './Header'
+export { default as Button } from './Button'
+export { default as MainSearchForm } from './MainSearchForm'
+export { default as FormInput } from './FormInput'
+export { default as MainPage } from './MainPage'
+export { default as AddAuto } from './AddAuto'
+export { default as MainAuto } from './MainAuto'
