@@ -1,25 +1,16 @@
 import React from 'react'
 import { Radio,Select } from 'antd';
 const { Option, OptGroup } = Select;
-const FormInput = ({type, amount}) => {
+const FormInput = (props) => {
+    const { defaultValue,title } = props 
     return (
-        type == 'radio' ?
-        <Radio.Group defaultValue="a" buttonStyle="solid"> 
-            <Radio.Button value="a">Hangzhou</Radio.Button>
-            <Radio.Button value="b">Shanghai</Radio.Button>
-            <Radio.Button value="c">Beijing</Radio.Button>
-            <Radio.Button value="d">Chengdu</Radio.Button>
-        </Radio.Group>
-        :
-        <Select defaultValue="lucy" style={{ width: 200 }} >
-        <OptGroup label="Manager">
-            <Option value="jack">Jack</Option>
-            <Option value="lucy">Lucy</Option>
-        </OptGroup>
-            <OptGroup label="Engineer">
-            <Option value="Yiminghe">yiminghe</Option>
-        </OptGroup>
+
+        <div className="main__list-body-left-item">
+        <span className="add__content-info-item-header" style={{fontWeight: 700}}>{title}</span>
+        <Select defaultValue={defaultValue} style={{ width: 200 }} {...props}>
+            
         </Select>
+        </div>
     )
 }
 

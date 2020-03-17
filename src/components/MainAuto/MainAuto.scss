@@ -15,6 +15,12 @@
                 margin-top: 10px;
                 display: flex;
                 flex-direction: column;
+                &-year {
+                    display: flex;
+                    .ant-select.ant-select-single.ant-select-show-arrow{
+                        margin-right: 5px;
+                    }
+                }
                 .ant-checkbox-group {
                     display: flex;
                     flex-direction: column;
